@@ -17,6 +17,7 @@ namespace LineAnalysis
         /// <summary>
         /// This method researches users string to found maximal series of duplicate symbols.
         /// </summary>
+        /// <returns>maximal length of series of duplicate symbols</returns>
         public int MaxSerialDuplicateSymbols()
         {
             int count = 0;
