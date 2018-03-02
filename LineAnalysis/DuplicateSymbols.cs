@@ -35,7 +35,7 @@ namespace LineAnalysis
                     {
                         maxCount = currentCount;
                     }
-                    currentCount = 0;
+                    currentCount = 1;
                 }
             }
             return maxCount;
