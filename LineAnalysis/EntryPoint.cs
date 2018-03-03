@@ -15,7 +15,7 @@ namespace LineAnalysis
         {
             try
             {
-                DuplicateSymbols inputString = new DuplicateSymbols(args[0]);
+                DuplicateSymbolsCounter inputString = new DuplicateSymbolsCounter(args[0]);
                 Console.WriteLine(inputString.MaxSerialDuplicateSymbols());
             }
             catch (FormatException)
