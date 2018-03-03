@@ -23,7 +23,7 @@ namespace LineAnalysis
             int currentCount = 1;
             int maxCount = 1;
 
-            for (int i = 0; i < UserString.Length - 1; i++)
+             for (int i = 0; i < UserString.Length - 1; i++)
             {
                 if (UserString[i].Equals(UserString[i + 1]))
                 {
@@ -31,11 +31,11 @@ namespace LineAnalysis
                 }
                 else
                 {
-                    if (currentCount > maxCount)
-                    {
-                        maxCount = currentCount;
-                    }
                     currentCount = 1;
+                }
+                if (currentCount > maxCount)
+                {
+                    maxCount = currentCount;
                 }
             }
             return maxCount;
