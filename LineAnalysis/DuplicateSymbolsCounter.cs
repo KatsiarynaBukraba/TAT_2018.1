@@ -3,7 +3,7 @@ using System;
 namespace LineAnalysis
 {
     /// <summary>
-    ///  This class contains methods for work with duplicate symbols.
+    ///  This class contains methods for work with dublicated symbols.
     /// </summary>
     class DuplicateSymbolsCounter
     {
@@ -15,9 +15,9 @@ namespace LineAnalysis
         }
 
         /// <summary>
-        /// This method calculates maximal series of duplicate symbols of user's string.
+        /// This method calculates maximal series of dublicated symbols of user's string.
         /// </summary>
-        /// <returns>maximal length of the series of duplicate symbols</returns>
+        /// <returns>maximal length of the series of dublicated symbols</returns>
         public int MaxSerialDuplicateSymbols()
         {
             int currentCount = 1;
