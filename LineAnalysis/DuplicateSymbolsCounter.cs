@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace LineAnalysis
 {
@@ -7,11 +7,11 @@ namespace LineAnalysis
     /// </summary>
     class DuplicateSymbolsCounter
     {
-        private string UserString { get; set; }
+        private string InputString { get; set; }
 
-        public DuplicateSymbolsCounter(string args)
+        public DuplicateSymbolsCounter(string value)
         {
-            UserString = args;
+            InputString = value;
         }
 
         /// <summary>
@@ -23,9 +23,9 @@ namespace LineAnalysis
             int currentCount = 1;
             int maxCount = 1;
 
-            for (int i = 0; i < UserString.Length - 1; i++)
+            for (int i = 0; i < InputString.Length - 1; i++)
             {
-                if (UserString[i].Equals(UserString[i + 1]))
+                if (InputString[i].Equals(InputString[i + 1]))
                 {
                     currentCount++;
                 }
