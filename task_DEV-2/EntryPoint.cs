@@ -13,15 +13,8 @@ namespace task_DEV_2
         /// </summary>
         static void Main()
         {
-            try
-            {
                 SequenceEvenIndex inputString = new SequenceEvenIndex(Console.ReadLine());
                 inputString.FindSequenceEvenIndex();
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("FormatException");
-            }
         }
     }
 }
