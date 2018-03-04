@@ -22,7 +22,7 @@ namespace task_DEV_2
         {
             StringBuilder sequenceEvenIndex = new StringBuilder(inputString);
 
-            for(int i = 1; i < sequenceEvenIndex.Length - 1; i++)
+            for(int i = 1; i < sequenceEvenIndex.Length; i++)
             {
                 sequenceEvenIndex.Remove(i, 1);
             }
