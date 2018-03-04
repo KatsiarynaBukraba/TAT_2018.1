@@ -4,7 +4,7 @@ using System.Text;
 namespace task_DEV_2
 {
     /// <summary>
-    /// This class finds sequence of even indices.
+    /// This class finds the sequence of even indices.
     /// </summary>
     class SequenceEvenIndex
     {
@@ -16,9 +16,10 @@ namespace task_DEV_2
         }
 
         /// <summary>
-        /// This method outputs sequence of even indices.
+        /// This method returns the sequence of even indices.
         /// </summary>
-        public void FindSequenceEvenIndex()
+        /// <returns>the sequence of even indices</returns>
+        public string FindSequenceEvenIndex()
         {
             StringBuilder sequenceEvenIndex = new StringBuilder(inputString);
 
@@ -27,7 +28,7 @@ namespace task_DEV_2
                 sequenceEvenIndex.Remove(i, 1);
             }
 
-            Console.WriteLine(sequenceEvenIndex);
+            return sequenceEvenIndex.ToString();
         }
     }
 }
