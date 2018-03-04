@@ -13,8 +13,8 @@ namespace task_DEV_2
         /// </summary>
         static void Main()
         {
-                SequenceEvenIndex inputString = new SequenceEvenIndex(Console.ReadLine());
-                inputString.FindSequenceEvenIndex();
+            SequenceEvenIndex inputString = new SequenceEvenIndex(Console.ReadLine());
+            Console.WriteLine(inputString.FindSequenceEvenIndex());
         }
     }
 }
