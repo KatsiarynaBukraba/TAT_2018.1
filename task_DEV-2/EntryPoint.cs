@@ -11,7 +11,7 @@ namespace task_DEV_2
         /// <summary>
         /// The entry point to the program.
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">the user's string to input</param>
         static void Main(string[] args)
         {
             try
