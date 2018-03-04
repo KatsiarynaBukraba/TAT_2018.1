@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Text;
 
 namespace task_DEV_2
@@ -13,7 +13,7 @@ namespace task_DEV_2
         /// </summary>
         static void Main()
         {
-            SequenceEvenIndex inputString = new SequenceEvenIndex(Console.ReadLine());
+            SequenceEvenIndexBuilder inputString = new SequenceEvenIndexBuilder(Console.ReadLine());
             Console.WriteLine(inputString.FindSequenceEvenIndex());
         }
     }
