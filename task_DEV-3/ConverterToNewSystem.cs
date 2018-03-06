@@ -36,7 +36,6 @@ namespace task_DEV_3
         private char GetDigit(int numberOfDigit)
         {
             string allDigits = "0123456789ABCDEFGHIJ";
-
             return allDigits[numberOfDigit];
         }
     }
