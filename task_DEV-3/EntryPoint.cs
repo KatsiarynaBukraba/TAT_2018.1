@@ -16,7 +16,7 @@ namespace task_DEV_3
 
             if (checkNumber && checkFormatBase && checkIntervalBase)
             {
-                ConverterToNewSystem converter = new ConverterToNewSystem(baseOfNewSystem);
+                ConverterToOtherSystem converter = new ConverterToOtherSystem(baseOfNewSystem);
                 Console.WriteLine(converter.GetConvertNumber(inputNumber));
             }
             else
