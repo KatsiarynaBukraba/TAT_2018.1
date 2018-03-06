@@ -6,11 +6,11 @@ namespace task_DEV_3
     /// <summary>
     /// This class converts the number in other numeral system.
     /// </summary>
-    class ConverterToNewSystem
+    class ConverterToOtherSystem
     {
         private int baseOfNewSystem;
 
-        public ConverterToNewSystem(int valueBase)
+        public ConverterToOtherSystem(int valueBase)
         {
             baseOfNewSystem = valueBase;
         }
