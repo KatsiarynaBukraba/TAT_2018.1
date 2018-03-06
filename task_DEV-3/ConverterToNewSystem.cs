@@ -18,7 +18,8 @@ namespace task_DEV_3
         /// <summary>
         /// This method converts the one number to the other in numeral system with input base.
         /// </summary>
-        /// <returns>the number to convert</returns>
+        /// <param name="inputNumber">the number to convert</param>
+        /// <returns>the converted number</returns>
         public string GetConvertNumber(int inputNumber)
         {
             StringBuilder convertNumber = new StringBuilder();
