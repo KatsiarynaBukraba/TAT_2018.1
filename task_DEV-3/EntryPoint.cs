@@ -7,7 +7,6 @@ namespace task_DEV_3
     {
         static void Main(string[] args)
         {
-
             int inputNumber; 
             int baseOfNewSystem;
 
