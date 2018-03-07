@@ -20,9 +20,9 @@ namespace task_DEV_3
                 ConverterToOtherSystem converter = new ConverterToOtherSystem(baseOfNewSystem);
                 Console.WriteLine(converter.GetConvertedNumber(inputNumber));
             }
-            catch(Exception error)
+            catch(Exception e)
             {
-                Console.WriteLine(error.Message);
+                Console.WriteLine(e.Message);
             }
         }
     }
