@@ -1,5 +1,6 @@
-using System;
+﻿using System;
 using System.Text;
+using System.Numerics;
 
 namespace task_DEV_3
 {
@@ -9,7 +10,7 @@ namespace task_DEV_3
         {
             try
             {
-                long inputNumber = Int64.Parse(args[0]);
+                BigInteger inputNumber = BigInteger.Parse(args[0]);
                 int baseOfNewSystem = Int32.Parse(args[1]);
                 ConverterToOtherSystem converter = new ConverterToOtherSystem(baseOfNewSystem);
                 Console.WriteLine(converter.GetConvertedNumber(inputNumber));

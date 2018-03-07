@@ -1,5 +1,6 @@
-using System;
+﻿using System;
 using System.Text;
+using System.Numerics;
 
 namespace task_DEV_3
 {
@@ -24,7 +25,7 @@ namespace task_DEV_3
         /// </summary>
         /// <param name="inputNumber">the number to convert</param>
         /// <returns>the converted number</returns>
-        public string GetConvertedNumber(long inputNumber)
+        public string GetConvertedNumber(BigInteger inputNumber)
         {
             StringBuilder convertedNumber = new StringBuilder();
 
