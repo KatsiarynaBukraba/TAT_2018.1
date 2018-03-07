@@ -8,11 +8,11 @@ namespace task_DEV_3
     /// </summary>
     class ConverterToOtherSystem
     {
-        private int baseOfNewSystem;
+        private int baseOfSystem;
 
         public ConverterToOtherSystem(int valueBase)
         {
-            baseOfNewSystem = valueBase;
+            baseOfSystem = valueBase;
         }
 
         /// <summary>
@@ -20,14 +20,14 @@ namespace task_DEV_3
         /// </summary>
         /// <param name="inputNumber">the number to convert</param>
         /// <returns>the converted number</returns>
-        public string GetConvertNumber(int inputNumber)
+        public string GetConvertNumber(long inputNumber)
         {
             StringBuilder convertNumber = new StringBuilder();
 
             do
             {
-                convertNumber.Insert(0, GetDigit(inputNumber % baseOfNewSystem));
-                inputNumber /= baseOfNewSystem;
+                convertNumber.Insert(0, GetDigit((int)(inputNumber % baseOfSystem)));
+                inputNumber /= baseOfSystem;
             }
             while (inputNumber > 0);
 
