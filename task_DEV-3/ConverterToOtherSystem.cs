@@ -16,7 +16,6 @@ namespace task_DEV_3
             {
                 throw new ArgumentException();
             }
-            
             baseOfSystem = valueBase;
         }
 
@@ -27,16 +26,16 @@ namespace task_DEV_3
         /// <returns>the converted number</returns>
         public string GetConvertedNumber(long inputNumber)
         {
-            StringBuilder convertNumber = new StringBuilder();
+            StringBuilder convertedNumber = new StringBuilder();
 
             do
             {
-                convertNumber.Insert(0, GetDigit((int)(inputNumber % baseOfSystem)));
+                convertedNumber.Insert(0, GetDigit((int)(inputNumber % baseOfSystem)));
                 inputNumber /= baseOfSystem;
             }
             while (inputNumber > 0);
 
-           return convertNumber.ToString();
+           return convertedNumber.ToString();
         }
 
         private char GetDigit(int numberOfDigit)
