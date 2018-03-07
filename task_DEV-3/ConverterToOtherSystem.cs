@@ -12,6 +12,11 @@ namespace task_DEV_3
 
         public ConverterToOtherSystem(int valueBase)
         {
+            if (valueBase < 2 || valueBase > 20)
+            {
+                throw new ArgumentException();
+            }
+            
             baseOfSystem = valueBase;
         }
 
@@ -20,7 +25,7 @@ namespace task_DEV_3
         /// </summary>
         /// <param name="inputNumber">the number to convert</param>
         /// <returns>the converted number</returns>
-        public string GetConvertNumber(long inputNumber)
+        public string GetConvertedNumber(long inputNumber)
         {
             StringBuilder convertNumber = new StringBuilder();
 
