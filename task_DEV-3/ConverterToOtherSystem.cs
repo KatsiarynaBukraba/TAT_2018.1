@@ -30,7 +30,7 @@ namespace task_DEV_3
 
             do
             {
-                convertedNumber.Insert(0, GetDigit((int)(inputNumber % baseOfSystem)));
+                convertedNumber.Insert(0, GetPartOfNumber((int)(inputNumber % baseOfSystem)));
                 inputNumber /= baseOfSystem;
             }
             while (inputNumber > 0);
@@ -38,10 +38,10 @@ namespace task_DEV_3
            return convertedNumber.ToString();
         }
 
-        private char GetDigit(int numberOfDigit)
+        private char GetPartOfNumber(int numberOfSymbol)
         {
-            string allDigits = "0123456789ABCDEFGHIJ";
-            return allDigits[numberOfDigit];
+            string allSymbols = "0123456789ABCDEFGHIJ";
+            return allSymbols[numberOfSymbol];
         }
     }
 }
