@@ -13,21 +13,16 @@ namespace task_DEV_3
                 return;
             }
 
-            long inputNumber;
-            int baseOfNewSystem;
-
-            bool checkNumber = Int64.TryParse(args[0], out inputNumber);
-            bool checkFormatBase = Int32.TryParse(args[1], out baseOfNewSystem);
-            bool checkIntervalBase = baseOfNewSystem > 2 && baseOfNewSystem < 20;
-
-            if (checkNumber && checkFormatBase && checkIntervalBase)
+            try
             {
+                long inputNumber = Int64.Parse(args[0]);
+                int baseOfNewSystem = Int32.Parse(args[1]);
                 ConverterToOtherSystem converter = new ConverterToOtherSystem(baseOfNewSystem);
-                Console.WriteLine(converter.GetConvertNumber(inputNumber));
+                Console.WriteLine(converter.GetConvertedNumber(inputNumber));
             }
-            else
+            catch(Exception error)
             {
-                Console.WriteLine("Error! Incorrect format of the data!");
+                Console.WriteLine(error.Message);
             }
         }
     }
