@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 
 namespace task_DEV_3
@@ -7,10 +7,16 @@ namespace task_DEV_3
     {
         static void Main(string[] args)
         {
-            int inputNumber; 
+            if (!(args.Length == 2))
+            {
+                Console.WriteLine("Error! Incorrect format of the data!");
+                return;
+            }
+
+            long inputNumber;
             int baseOfNewSystem;
 
-            bool checkNumber = Int32.TryParse(args[0], out inputNumber);
+            bool checkNumber = Int64.TryParse(args[0], out inputNumber);
             bool checkFormatBase = Int32.TryParse(args[1], out baseOfNewSystem);
             bool checkIntervalBase = baseOfNewSystem > 2 && baseOfNewSystem < 20;
 
