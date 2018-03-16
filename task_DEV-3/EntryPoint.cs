@@ -1,5 +1,4 @@
-using System;
-using System.Text;
+﻿using System;
 using System.Numerics;
 
 namespace task_DEV_3
@@ -15,7 +14,7 @@ namespace task_DEV_3
                     throw new FormatException();
                 }
 
-                BigInteger inputNumber = BigInteger.Parse(args[0]);
+                int inputNumber = Int32.Parse(args[0]);
                 int baseOfNewSystem = Int32.Parse(args[1]);
                 ConverterToOtherSystem converter = new ConverterToOtherSystem(baseOfNewSystem);
                 Console.WriteLine(converter.GetConvertedNumber(inputNumber));
