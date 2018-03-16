@@ -29,7 +29,7 @@ namespace task_DEV_3.Tests
         [TestCase(1)]
         [TestCase(21)]
         [Test]
-        public void ErrorTest(int errorBase)
+        public void NegativeBasaTest(int errorBase)
         {
              Assert.Throws<ArgumentException>(() => new ConverterToOtherSystem(errorBase));
         }
