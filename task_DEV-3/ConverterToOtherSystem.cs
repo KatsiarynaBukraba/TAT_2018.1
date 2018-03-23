@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Text;
 using System.Numerics;
+using System.Text;
 
 namespace task_DEV_3
 {
     /// <summary>
     /// This class converts the number in other numeral system.
     /// </summary>
-    class ConverterToOtherSystem
+    public class ConverterToOtherSystem
     {
         private int baseOfSystem;
 
@@ -25,13 +25,18 @@ namespace task_DEV_3
         /// </summary>
         /// <param name="inputNumber">the number to convert</param>
         /// <returns>the converted number</returns>
-        public string GetConvertedNumber(BigInteger inputNumber)
+        public string GetConvertedNumber(int inputNumber)
         {
+            if (inputNumber < 0)
+            {
+                throw new ArgumentException();
+            }
+
             StringBuilder convertedNumber = new StringBuilder();
 
             do
             {
-                convertedNumber.Insert(0, GetPartOfNumber((int)(inputNumber % baseOfSystem)));
+                convertedNumber.Insert(0, GetPartOfNumber(inputNumber % baseOfSystem));
                 inputNumber /= baseOfSystem;
             }
             while (inputNumber > 0);
